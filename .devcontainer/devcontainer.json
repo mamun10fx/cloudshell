@@ -1,0 +1,18 @@
+{
+  "name": "Android CloudShell Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "kotlin-lang.kotlin",
+        "naco-siren.gradle-language"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "echo 'Dev container created. Android SDK is ready.'",
+  "remoteUser": "vscode"
+}
